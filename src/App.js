@@ -44,7 +44,7 @@ function App() {
   return (
     <VStack p={4}>
       <IconButton
-        icon={colorMode === 'light' ? <FaSun /> : <FaMoon/>}
+        icon={colorMode === 'dark' ? <FaSun /> : <FaMoon/>}
         isRound="true"
         size="lg"
         alignSelf="flex-end"
