@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import { Heading, VStack, IconButton, useToast, useColorMode} from "@chakra-ui/react";
 import TodoList from "./components/TodoList";
 import { FaSun, FaMoon } from "react-icons/fa";
@@ -6,11 +5,6 @@ import AddTodo from "./components/AddTodo";
 import { useState, useEffect } from "react";
 
 function App() {
-  const initialTodos = [
-    { id: 1, body: "This is first todo" },
-    { id: 2, body: "This is second todo" },
-  ];
-
   const [todos, setTodos] = useState(
     () => JSON.parse(localStorage.getItem("todos")) || []
   );
